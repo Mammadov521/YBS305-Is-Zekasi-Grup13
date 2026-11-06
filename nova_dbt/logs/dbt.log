@@ -1,0 +1,1559 @@
+[0m19:57:35.167442 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9B9735370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9B6FA3D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9B6FA2FF0>]}
+
+
+============================== 19:57:35.174446 | f4d91f92-a964-40ba-a8c6-93e3b5704846 ==============================
+[0m19:57:35.174446 [info ] [MainThread]: Running with dbt=1.12.6
+[0m19:57:35.176449 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Sami\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\Sami\\OneDrive - 29mayis\\Masaüstü\\YBS305_Proje\\nova_dbt\\logs'}
+[0m19:57:35.515408 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f4d91f92-a964-40ba-a8c6-93e3b5704846', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9BA43D2E0>]}
+[0m19:57:35.569250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f4d91f92-a964-40ba-a8c6-93e3b5704846', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9BA52B290>]}
+[0m19:57:35.571497 [info ] [MainThread]: Registered adapter: duckdb=1.11.1
+[0m19:57:35.777522 [debug] [MainThread]: checksum: 37f25eb6c7ad46764fc7d46787878aeabc0d74ef09c88617427b1c38b007b68e, vars: {}, profile: nova_dbt, target: dev, version: 1.12.6
+[0m19:57:35.777522 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:57:35.777522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f4d91f92-a964-40ba-a8c6-93e3b5704846', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9BA5E4DA0>]}
+[0m19:57:38.931352 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.nova_dbt.marts
+[0m19:57:38.934802 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f4d91f92-a964-40ba-a8c6-93e3b5704846', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9BA8B95E0>]}
+[0m19:57:38.977649 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\manifest.json
+[0m19:57:39.006264 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\semantic_manifest.json
+[0m19:57:39.519389 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\osi_document.json
+[0m19:57:39.601195 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f4d91f92-a964-40ba-a8c6-93e3b5704846', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9BAACD550>]}
+[0m19:57:39.602200 [info ] [MainThread]: Found 1 model, 511 macros
+[0m19:57:39.602200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f4d91f92-a964-40ba-a8c6-93e3b5704846', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9BAA4D280>]}
+[0m19:57:39.603195 [info ] [MainThread]: 
+[0m19:57:39.604200 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:57:39.604200 [info ] [MainThread]: 
+[0m19:57:39.605193 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m19:57:39.606193 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev'
+[0m19:57:39.665394 [debug] [ThreadPool]: Using duckdb connection "list_dev"
+[0m19:57:39.665394 [debug] [ThreadPool]: On list_dev: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "connection_name": "list_dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"dev"'
+    
+  
+  
+[0m19:57:39.665394 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:57:39.702666 [debug] [ThreadPool]: SQL status: OK in 0.037 seconds
+[0m19:57:39.703667 [debug] [ThreadPool]: On list_dev: Close
+[0m19:57:39.703667 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dev, now create_dev_main)
+[0m19:57:39.704667 [debug] [ThreadPool]: Creating schema "database: "dev"
+schema: "main"
+"
+[0m19:57:39.708666 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m19:57:39.708666 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='dev'
+        and type != 'duckdb'
+    
+  
+[0m19:57:39.709667 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:57:39.710669 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m19:57:39.710669 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m19:57:39.711667 [debug] [ThreadPool]: On create_dev_main: BEGIN
+[0m19:57:39.711667 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m19:57:39.711667 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m19:57:39.711667 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+    
+        create schema if not exists "dev"."main"
+    
+[0m19:57:39.712667 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m19:57:39.712667 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m19:57:39.712667 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m19:57:39.713667 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m19:57:39.713667 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m19:57:39.713667 [debug] [ThreadPool]: On create_dev_main: Close
+[0m19:57:39.715241 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev_main'
+[0m19:57:39.718343 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m19:57:39.718343 [debug] [ThreadPool]: On list_dev_main: BEGIN
+[0m19:57:39.718343 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:57:39.719347 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m19:57:39.719347 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m19:57:39.719347 [debug] [ThreadPool]: On list_dev_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "connection_name": "list_dev_main"} */
+select
+      'dev' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'dev'
+  
+[0m19:57:39.728343 [debug] [ThreadPool]: SQL status: OK in 0.009 seconds
+[0m19:57:39.729344 [debug] [ThreadPool]: On list_dev_main: ROLLBACK
+[0m19:57:39.730343 [debug] [ThreadPool]: On list_dev_main: Close
+[0m19:57:39.730343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f4d91f92-a964-40ba-a8c6-93e3b5704846', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9BA40C2F0>]}
+[0m19:57:39.730343 [debug] [MainThread]: Using duckdb connection "master"
+[0m19:57:39.731366 [debug] [MainThread]: On master: BEGIN
+[0m19:57:39.731366 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:57:39.731366 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m19:57:39.731366 [debug] [MainThread]: On master: COMMIT
+[0m19:57:39.731366 [debug] [MainThread]: Using duckdb connection "master"
+[0m19:57:39.732350 [debug] [MainThread]: On master: COMMIT
+[0m19:57:39.732350 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m19:57:39.732350 [debug] [MainThread]: On master: Close
+[0m19:57:39.741948 [debug] [Thread-1 (]: Began running node model.nova_dbt.stg_demografi
+[0m19:57:39.741948 [info ] [Thread-1 (]: 1 of 1 START sql view model main.stg_demografi ................................. [RUN]
+[0m19:57:39.742949 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.nova_dbt.stg_demografi'
+[0m19:57:39.742949 [debug] [Thread-1 (]: Began compiling node model.nova_dbt.stg_demografi
+[0m19:57:39.745949 [debug] [Thread-1 (]: Writing injected SQL for node "model.nova_dbt.stg_demografi"
+[0m19:57:39.748404 [debug] [Thread-1 (]: Began executing node model.nova_dbt.stg_demografi
+[0m19:57:39.748404 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m19:57:39.749415 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_demografi"} */
+select database_name, type from duckdb_databases()
+[0m19:57:39.749415 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:57:39.750418 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m19:57:39.751415 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m19:57:39.751415 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_demografi"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('dev')
+                      and lower(schema_name) = lower('main')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m19:57:39.752415 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m19:57:39.772543 [debug] [Thread-1 (]: Writing runtime sql for node "model.nova_dbt.stg_demografi"
+[0m19:57:39.774536 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m19:57:39.774536 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: BEGIN
+[0m19:57:39.775537 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m19:57:39.775537 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m19:57:39.775537 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_demografi"} */
+
+  
+  create view "dev"."main"."stg_demografi__dbt_tmp" as (
+    with raw_demografi as (
+    select * from read_csv_auto('../data/ilce_demografi.csv')
+)
+
+select
+    ilce_adi,
+    trim(upper(ilce_adi)) as temiz_ilce,
+    nufus,
+    yas_ortalamasi,
+    gelir_durumu
+from raw_demografi
+  );
+
+[0m19:57:39.780535 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m19:57:39.784549 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m19:57:39.784549 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_demografi"} */
+alter view "dev"."main"."stg_demografi__dbt_tmp" rename to "stg_demografi"
+[0m19:57:39.785543 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m19:57:39.792542 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: COMMIT
+[0m19:57:39.792542 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m19:57:39.792542 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: COMMIT
+[0m19:57:39.795537 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m19:57:39.798542 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m19:57:39.798542 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_demografi"} */
+
+      drop view if exists "dev"."main"."stg_demografi__dbt_backup" cascade
+    
+[0m19:57:39.798542 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m19:57:39.800542 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: Close
+[0m19:57:39.813537 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f4d91f92-a964-40ba-a8c6-93e3b5704846', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9BA1A1910>]}
+[0m19:57:39.814549 [info ] [Thread-1 (]: 1 of 1 OK created sql view model main.stg_demografi ............................ [[32mOK[0m in 0.06s]
+[0m19:57:39.814549 [debug] [Thread-1 (]: Finished running node model.nova_dbt.stg_demografi
+[0m19:57:39.815536 [debug] [MainThread]: Using duckdb connection "master"
+[0m19:57:39.815536 [debug] [MainThread]: On master: BEGIN
+[0m19:57:39.815536 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:57:39.816537 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m19:57:39.816537 [debug] [MainThread]: On master: COMMIT
+[0m19:57:39.816537 [debug] [MainThread]: Using duckdb connection "master"
+[0m19:57:39.816537 [debug] [MainThread]: On master: COMMIT
+[0m19:57:39.817538 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m19:57:39.817538 [debug] [MainThread]: On master: Close
+[0m19:57:39.817538 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:57:39.817538 [debug] [MainThread]: Connection 'create_dev_main' was properly closed.
+[0m19:57:39.818538 [debug] [MainThread]: Connection 'list_dev_main' was properly closed.
+[0m19:57:39.818538 [debug] [MainThread]: Connection 'model.nova_dbt.stg_demografi' was properly closed.
+[0m19:57:39.818538 [info ] [MainThread]: 
+[0m19:57:39.818975 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.21 seconds (0.21s).
+[0m19:57:39.819985 [debug] [MainThread]: Command end result
+[0m19:57:39.837984 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\manifest.json
+[0m19:57:39.840308 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\semantic_manifest.json
+[0m19:57:39.842324 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\osi_document.json
+[0m19:57:39.848013 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\run_results.json
+[0m19:57:39.848013 [info ] [MainThread]: 
+[0m19:57:39.848013 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:57:39.849010 [info ] [MainThread]: 
+[0m19:57:39.849010 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m19:57:39.850008 [debug] [MainThread]: Command `dbt run` succeeded at 19:57:39.850008 after 4.83 seconds
+[0m19:57:39.850008 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9B958C620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9B6FB0320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9B93FC770>]}
+[0m19:57:39.850008 [debug] [MainThread]: Flushing usage events
+[0m19:57:40.710536 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:02:47.710710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C0399C770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C0399FF80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C03958C20>]}
+
+
+============================== 20:02:47.717709 | bc8bf252-78dd-4e8d-aec8-78c0eb64ae48 ==============================
+[0m20:02:47.717709 [info ] [MainThread]: Running with dbt=1.12.6
+[0m20:02:47.719709 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Sami\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Sami\\OneDrive - 29mayis\\Masaüstü\\YBS305_Proje\\nova_dbt\\logs'}
+[0m20:02:47.904869 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bc8bf252-78dd-4e8d-aec8-78c0eb64ae48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C0135C770>]}
+[0m20:02:47.948632 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bc8bf252-78dd-4e8d-aec8-78c0eb64ae48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C05604740>]}
+[0m20:02:47.950639 [info ] [MainThread]: Registered adapter: duckdb=1.11.1
+[0m20:02:48.122501 [debug] [MainThread]: checksum: 37f25eb6c7ad46764fc7d46787878aeabc0d74ef09c88617427b1c38b007b68e, vars: {}, profile: nova_dbt, target: dev, version: 1.12.6
+[0m20:02:48.230800 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 3 files added, 0 files changed.
+[0m20:02:48.230800 [debug] [MainThread]: Partial parsing: added file: nova_dbt://models\staging\stg_sepet.sql
+[0m20:02:48.230800 [debug] [MainThread]: Partial parsing: added file: nova_dbt://models\staging\stg_musteri.sql
+[0m20:02:48.230800 [debug] [MainThread]: Partial parsing: added file: nova_dbt://models\staging\stg_satis.sql
+[0m20:02:48.449517 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.nova_dbt.marts
+[0m20:02:48.452518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bc8bf252-78dd-4e8d-aec8-78c0eb64ae48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C05FB81D0>]}
+[0m20:02:48.494517 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\manifest.json
+[0m20:02:48.496600 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\semantic_manifest.json
+[0m20:02:48.511518 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\osi_document.json
+[0m20:02:48.519518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bc8bf252-78dd-4e8d-aec8-78c0eb64ae48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C0593F4A0>]}
+[0m20:02:48.519518 [info ] [MainThread]: Found 4 models, 511 macros
+[0m20:02:48.520517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bc8bf252-78dd-4e8d-aec8-78c0eb64ae48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C05913830>]}
+[0m20:02:48.521518 [info ] [MainThread]: 
+[0m20:02:48.522518 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:02:48.522518 [info ] [MainThread]: 
+[0m20:02:48.523523 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m20:02:48.527524 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev'
+[0m20:02:48.573032 [debug] [ThreadPool]: Using duckdb connection "list_dev"
+[0m20:02:48.573032 [debug] [ThreadPool]: On list_dev: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "connection_name": "list_dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"dev"'
+    
+  
+  
+[0m20:02:48.573032 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:02:48.621033 [debug] [ThreadPool]: SQL status: OK in 0.047 seconds
+[0m20:02:48.622034 [debug] [ThreadPool]: On list_dev: Close
+[0m20:02:48.622034 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dev, now create_dev_main)
+[0m20:02:48.623039 [debug] [ThreadPool]: Creating schema "database: "dev"
+schema: "main"
+"
+[0m20:02:48.629635 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m20:02:48.630634 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='dev'
+        and type != 'duckdb'
+    
+  
+[0m20:02:48.630634 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:02:48.631633 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m20:02:48.633043 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m20:02:48.633043 [debug] [ThreadPool]: On create_dev_main: BEGIN
+[0m20:02:48.633043 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:02:48.634536 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m20:02:48.634536 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+    
+        create schema if not exists "dev"."main"
+    
+[0m20:02:48.635042 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:02:48.635042 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m20:02:48.636053 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m20:02:48.636053 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m20:02:48.636053 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:02:48.636053 [debug] [ThreadPool]: On create_dev_main: Close
+[0m20:02:48.639573 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev_main'
+[0m20:02:48.642572 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m20:02:48.642572 [debug] [ThreadPool]: On list_dev_main: BEGIN
+[0m20:02:48.642572 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:02:48.643573 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:02:48.643573 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m20:02:48.643573 [debug] [ThreadPool]: On list_dev_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "connection_name": "list_dev_main"} */
+select
+      'dev' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'dev'
+  
+[0m20:02:48.653571 [debug] [ThreadPool]: SQL status: OK in 0.010 seconds
+[0m20:02:48.654570 [debug] [ThreadPool]: On list_dev_main: ROLLBACK
+[0m20:02:48.654570 [debug] [ThreadPool]: On list_dev_main: Close
+[0m20:02:48.655576 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bc8bf252-78dd-4e8d-aec8-78c0eb64ae48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C019E7380>]}
+[0m20:02:48.655576 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:02:48.656572 [debug] [MainThread]: On master: BEGIN
+[0m20:02:48.656572 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:02:48.656572 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m20:02:48.656572 [debug] [MainThread]: On master: COMMIT
+[0m20:02:48.656572 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:02:48.657572 [debug] [MainThread]: On master: COMMIT
+[0m20:02:48.657572 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m20:02:48.657572 [debug] [MainThread]: On master: Close
+[0m20:02:48.660573 [debug] [Thread-1 (]: Began running node model.nova_dbt.stg_demografi
+[0m20:02:48.660573 [info ] [Thread-1 (]: 1 of 4 START sql view model main.stg_demografi ................................. [RUN]
+[0m20:02:48.661574 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.nova_dbt.stg_demografi'
+[0m20:02:48.661574 [debug] [Thread-1 (]: Began compiling node model.nova_dbt.stg_demografi
+[0m20:02:48.664571 [debug] [Thread-1 (]: Writing injected SQL for node "model.nova_dbt.stg_demografi"
+[0m20:02:48.665572 [debug] [Thread-1 (]: Began executing node model.nova_dbt.stg_demografi
+[0m20:02:48.667572 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m20:02:48.667572 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_demografi"} */
+select database_name, type from duckdb_databases()
+[0m20:02:48.667572 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:02:48.668573 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m20:02:48.669572 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m20:02:48.669572 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_demografi"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('dev')
+                      and lower(schema_name) = lower('main')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m20:02:48.670573 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m20:02:48.688572 [debug] [Thread-1 (]: Writing runtime sql for node "model.nova_dbt.stg_demografi"
+[0m20:02:48.689573 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m20:02:48.689573 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: BEGIN
+[0m20:02:48.690573 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:02:48.690573 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m20:02:48.690573 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_demografi"} */
+
+  
+  create view "dev"."main"."stg_demografi__dbt_tmp" as (
+    with raw_demografi as (
+    select * from read_csv_auto('../data/ilce_demografi.csv')
+)
+
+select
+    ilce_adi,
+    trim(upper(ilce_adi)) as temiz_ilce,
+    nufus,
+    yas_ortalamasi,
+    gelir_durumu
+from raw_demografi
+  );
+
+[0m20:02:48.694571 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m20:02:48.698572 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m20:02:48.698572 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_demografi"} */
+alter view "dev"."main"."stg_demografi" rename to "stg_demografi__dbt_backup"
+[0m20:02:48.698572 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:02:48.700576 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m20:02:48.700576 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_demografi"} */
+alter view "dev"."main"."stg_demografi__dbt_tmp" rename to "stg_demografi"
+[0m20:02:48.700576 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:02:48.709571 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: COMMIT
+[0m20:02:48.709571 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m20:02:48.710572 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: COMMIT
+[0m20:02:48.714743 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m20:02:48.717739 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m20:02:48.717739 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_demografi"} */
+
+      drop view if exists "dev"."main"."stg_demografi__dbt_backup" cascade
+    
+[0m20:02:48.719660 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m20:02:48.721663 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: Close
+[0m20:02:48.722663 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bc8bf252-78dd-4e8d-aec8-78c0eb64ae48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C05FAE300>]}
+[0m20:02:48.723672 [info ] [Thread-1 (]: 1 of 4 OK created sql view model main.stg_demografi ............................ [[32mOK[0m in 0.06s]
+[0m20:02:48.723672 [debug] [Thread-1 (]: Finished running node model.nova_dbt.stg_demografi
+[0m20:02:48.723672 [debug] [Thread-1 (]: Began running node model.nova_dbt.stg_musteri
+[0m20:02:48.724667 [info ] [Thread-1 (]: 2 of 4 START sql view model main.stg_musteri ................................... [RUN]
+[0m20:02:48.724667 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nova_dbt.stg_demografi, now model.nova_dbt.stg_musteri)
+[0m20:02:48.724667 [debug] [Thread-1 (]: Began compiling node model.nova_dbt.stg_musteri
+[0m20:02:48.725667 [debug] [Thread-1 (]: Writing injected SQL for node "model.nova_dbt.stg_musteri"
+[0m20:02:48.725667 [debug] [Thread-1 (]: Began executing node model.nova_dbt.stg_musteri
+[0m20:02:48.727673 [debug] [Thread-1 (]: Writing runtime sql for node "model.nova_dbt.stg_musteri"
+[0m20:02:48.729683 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_musteri"
+[0m20:02:48.730668 [debug] [Thread-1 (]: On model.nova_dbt.stg_musteri: BEGIN
+[0m20:02:48.730668 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:02:48.731673 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m20:02:48.731673 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_musteri"
+[0m20:02:48.731673 [debug] [Thread-1 (]: On model.nova_dbt.stg_musteri: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_musteri"} */
+
+  
+  create view "dev"."main"."stg_musteri__dbt_tmp" as (
+    with raw_musteri as (
+    select * from read_csv_auto('../data/musteri.csv')
+)
+select 
+    musteri_id,
+    ad_soyad,
+    ilce,
+    trim(upper(ilce)) as temiz_ilce,
+    kayit_tarihi::date as kayit_tarihi
+from raw_musteri
+  );
+
+[0m20:02:48.734703 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m20:02:48.735715 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_musteri"
+[0m20:02:48.735715 [debug] [Thread-1 (]: On model.nova_dbt.stg_musteri: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_musteri"} */
+alter view "dev"."main"."stg_musteri__dbt_tmp" rename to "stg_musteri"
+[0m20:02:48.736715 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:02:48.738208 [debug] [Thread-1 (]: On model.nova_dbt.stg_musteri: COMMIT
+[0m20:02:48.738208 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_musteri"
+[0m20:02:48.738208 [debug] [Thread-1 (]: On model.nova_dbt.stg_musteri: COMMIT
+[0m20:02:48.740678 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m20:02:48.741690 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_musteri"
+[0m20:02:48.741690 [debug] [Thread-1 (]: On model.nova_dbt.stg_musteri: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_musteri"} */
+
+      drop view if exists "dev"."main"."stg_musteri__dbt_backup" cascade
+    
+[0m20:02:48.741690 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:02:48.742688 [debug] [Thread-1 (]: On model.nova_dbt.stg_musteri: Close
+[0m20:02:48.742688 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bc8bf252-78dd-4e8d-aec8-78c0eb64ae48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C0732A8A0>]}
+[0m20:02:48.743699 [info ] [Thread-1 (]: 2 of 4 OK created sql view model main.stg_musteri .............................. [[32mOK[0m in 0.02s]
+[0m20:02:48.743699 [debug] [Thread-1 (]: Finished running node model.nova_dbt.stg_musteri
+[0m20:02:48.743699 [debug] [Thread-1 (]: Began running node model.nova_dbt.stg_satis
+[0m20:02:48.744686 [info ] [Thread-1 (]: 3 of 4 START sql view model main.stg_satis ..................................... [RUN]
+[0m20:02:48.744686 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nova_dbt.stg_musteri, now model.nova_dbt.stg_satis)
+[0m20:02:48.744686 [debug] [Thread-1 (]: Began compiling node model.nova_dbt.stg_satis
+[0m20:02:48.745687 [debug] [Thread-1 (]: Writing injected SQL for node "model.nova_dbt.stg_satis"
+[0m20:02:48.746687 [debug] [Thread-1 (]: Began executing node model.nova_dbt.stg_satis
+[0m20:02:48.747692 [debug] [Thread-1 (]: Writing runtime sql for node "model.nova_dbt.stg_satis"
+[0m20:02:48.748703 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_satis"
+[0m20:02:48.749688 [debug] [Thread-1 (]: On model.nova_dbt.stg_satis: BEGIN
+[0m20:02:48.749688 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:02:48.749688 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m20:02:48.750686 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_satis"
+[0m20:02:48.750686 [debug] [Thread-1 (]: On model.nova_dbt.stg_satis: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_satis"} */
+
+  
+  create view "dev"."main"."stg_satis__dbt_tmp" as (
+    with raw_satis as (
+    select * from read_csv_auto('../data/perakende_satis.csv')
+)
+select 
+    satis_id,
+    musteri_id,
+    tarih::date as satis_tarihi,
+    toplam_tutar,
+    odeme_yontemi
+from raw_satis
+  );
+
+[0m20:02:48.752688 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m20:02:48.754687 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_satis"
+[0m20:02:48.754687 [debug] [Thread-1 (]: On model.nova_dbt.stg_satis: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_satis"} */
+alter view "dev"."main"."stg_satis__dbt_tmp" rename to "stg_satis"
+[0m20:02:48.755687 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:02:48.756687 [debug] [Thread-1 (]: On model.nova_dbt.stg_satis: COMMIT
+[0m20:02:48.756687 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_satis"
+[0m20:02:48.756687 [debug] [Thread-1 (]: On model.nova_dbt.stg_satis: COMMIT
+[0m20:02:48.758239 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m20:02:48.759243 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_satis"
+[0m20:02:48.760245 [debug] [Thread-1 (]: On model.nova_dbt.stg_satis: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_satis"} */
+
+      drop view if exists "dev"."main"."stg_satis__dbt_backup" cascade
+    
+[0m20:02:48.760245 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:02:48.761245 [debug] [Thread-1 (]: On model.nova_dbt.stg_satis: Close
+[0m20:02:48.761245 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bc8bf252-78dd-4e8d-aec8-78c0eb64ae48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C073DF410>]}
+[0m20:02:48.762244 [info ] [Thread-1 (]: 3 of 4 OK created sql view model main.stg_satis ................................ [[32mOK[0m in 0.02s]
+[0m20:02:48.762244 [debug] [Thread-1 (]: Finished running node model.nova_dbt.stg_satis
+[0m20:02:48.762244 [debug] [Thread-1 (]: Began running node model.nova_dbt.stg_sepet
+[0m20:02:48.763243 [info ] [Thread-1 (]: 4 of 4 START sql view model main.stg_sepet ..................................... [RUN]
+[0m20:02:48.763243 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nova_dbt.stg_satis, now model.nova_dbt.stg_sepet)
+[0m20:02:48.763243 [debug] [Thread-1 (]: Began compiling node model.nova_dbt.stg_sepet
+[0m20:02:48.764256 [debug] [Thread-1 (]: Writing injected SQL for node "model.nova_dbt.stg_sepet"
+[0m20:02:48.765242 [debug] [Thread-1 (]: Began executing node model.nova_dbt.stg_sepet
+[0m20:02:48.768251 [debug] [Thread-1 (]: Writing runtime sql for node "model.nova_dbt.stg_sepet"
+[0m20:02:48.769439 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_sepet"
+[0m20:02:48.769439 [debug] [Thread-1 (]: On model.nova_dbt.stg_sepet: BEGIN
+[0m20:02:48.769439 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:02:48.770449 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:02:48.770449 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_sepet"
+[0m20:02:48.770449 [debug] [Thread-1 (]: On model.nova_dbt.stg_sepet: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_sepet"} */
+
+  
+  create view "dev"."main"."stg_sepet__dbt_tmp" as (
+    with raw_sepet as (
+    select * from read_csv_auto('../data/sepet.csv')
+)
+select 
+    sepet_id,
+    satis_id,
+    urun_adi,
+    kategori,
+    adet,
+    birim_fiyat,
+    (adet * birim_fiyat) as satir_tutari
+from raw_sepet
+  );
+
+[0m20:02:48.772452 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m20:02:48.774443 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_sepet"
+[0m20:02:48.774443 [debug] [Thread-1 (]: On model.nova_dbt.stg_sepet: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_sepet"} */
+alter view "dev"."main"."stg_sepet__dbt_tmp" rename to "stg_sepet"
+[0m20:02:48.775445 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:02:48.776461 [debug] [Thread-1 (]: On model.nova_dbt.stg_sepet: COMMIT
+[0m20:02:48.776461 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_sepet"
+[0m20:02:48.776461 [debug] [Thread-1 (]: On model.nova_dbt.stg_sepet: COMMIT
+[0m20:02:48.778982 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m20:02:48.779970 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_sepet"
+[0m20:02:48.779970 [debug] [Thread-1 (]: On model.nova_dbt.stg_sepet: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_sepet"} */
+
+      drop view if exists "dev"."main"."stg_sepet__dbt_backup" cascade
+    
+[0m20:02:48.780982 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:02:48.780982 [debug] [Thread-1 (]: On model.nova_dbt.stg_sepet: Close
+[0m20:02:48.781976 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bc8bf252-78dd-4e8d-aec8-78c0eb64ae48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C073EE270>]}
+[0m20:02:48.781976 [info ] [Thread-1 (]: 4 of 4 OK created sql view model main.stg_sepet ................................ [[32mOK[0m in 0.02s]
+[0m20:02:48.781976 [debug] [Thread-1 (]: Finished running node model.nova_dbt.stg_sepet
+[0m20:02:48.782968 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:02:48.783970 [debug] [MainThread]: On master: BEGIN
+[0m20:02:48.783970 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:02:48.783970 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m20:02:48.783970 [debug] [MainThread]: On master: COMMIT
+[0m20:02:48.783970 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:02:48.784976 [debug] [MainThread]: On master: COMMIT
+[0m20:02:48.784976 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m20:02:48.784976 [debug] [MainThread]: On master: Close
+[0m20:02:48.784976 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:02:48.785971 [debug] [MainThread]: Connection 'create_dev_main' was properly closed.
+[0m20:02:48.785971 [debug] [MainThread]: Connection 'list_dev_main' was properly closed.
+[0m20:02:48.785971 [debug] [MainThread]: Connection 'model.nova_dbt.stg_sepet' was properly closed.
+[0m20:02:48.785971 [info ] [MainThread]: 
+[0m20:02:48.785971 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 0.26 seconds (0.26s).
+[0m20:02:48.786968 [debug] [MainThread]: Command end result
+[0m20:02:48.805968 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\manifest.json
+[0m20:02:48.807970 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\semantic_manifest.json
+[0m20:02:48.809970 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\osi_document.json
+[0m20:02:48.813970 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\run_results.json
+[0m20:02:48.814970 [info ] [MainThread]: 
+[0m20:02:48.814970 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:02:48.814970 [info ] [MainThread]: 
+[0m20:02:48.815970 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=4
+[0m20:02:48.815970 [debug] [MainThread]: Command `dbt run` succeeded at 20:02:48.815970 after 1.40 seconds
+[0m20:02:48.817050 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C0382A180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C0382A6C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C05990800>]}
+[0m20:02:48.817050 [debug] [MainThread]: Flushing usage events
+[0m20:02:49.668068 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:07:28.184466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B6027FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B4A357F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B48C79B0>]}
+
+
+============================== 20:07:28.195984 | a617d371-70ac-4ae5-8e2c-71b849a9b890 ==============================
+[0m20:07:28.195984 [info ] [MainThread]: Running with dbt=1.12.6
+[0m20:07:28.196977 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Sami\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Sami\\OneDrive - 29mayis\\Masaüstü\\YBS305_Proje\\nova_dbt\\logs'}
+[0m20:07:29.188545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a617d371-70ac-4ae5-8e2c-71b849a9b890', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B6E3DAC0>]}
+[0m20:07:29.231231 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a617d371-70ac-4ae5-8e2c-71b849a9b890', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B6E0B710>]}
+[0m20:07:29.272150 [info ] [MainThread]: Registered adapter: duckdb=1.11.1
+[0m20:07:29.719408 [debug] [MainThread]: checksum: 37f25eb6c7ad46764fc7d46787878aeabc0d74ef09c88617427b1c38b007b68e, vars: {}, profile: nova_dbt, target: dev, version: 1.12.6
+[0m20:07:30.645856 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 0 files changed.
+[0m20:07:30.646800 [debug] [MainThread]: Partial parsing: added file: nova_dbt://models\schema.yml
+[0m20:07:30.646800 [debug] [MainThread]: Partial parsing: added file: nova_dbt://models\marts\fct_satis_analizi.sql
+[0m20:07:31.042263 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on
+'fct_satis_analizi' in package 'nova_dbt' (models\schema.yml). Arguments to
+generic tests should be nested under the `arguments` property.
+[0m20:07:31.042263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'a617d371-70ac-4ae5-8e2c-71b849a9b890', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B86B52E0>]}
+[0m20:07:31.091548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a617d371-70ac-4ae5-8e2c-71b849a9b890', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B8751460>]}
+[0m20:07:31.146476 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\manifest.json
+[0m20:07:31.167914 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\semantic_manifest.json
+[0m20:07:31.376332 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\osi_document.json
+[0m20:07:31.505043 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a617d371-70ac-4ae5-8e2c-71b849a9b890', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B87864E0>]}
+[0m20:07:31.506002 [info ] [MainThread]: Found 5 models, 5 data tests, 511 macros
+[0m20:07:31.506002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a617d371-70ac-4ae5-8e2c-71b849a9b890', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B6E3E5A0>]}
+[0m20:07:31.508003 [info ] [MainThread]: 
+[0m20:07:31.508003 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:07:31.508003 [info ] [MainThread]: 
+[0m20:07:31.508999 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m20:07:31.512005 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev'
+[0m20:07:33.754358 [debug] [ThreadPool]: Using duckdb connection "list_dev"
+[0m20:07:33.754358 [debug] [ThreadPool]: On list_dev: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "connection_name": "list_dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"dev"'
+    
+  
+  
+[0m20:07:33.755362 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:07:33.806700 [debug] [ThreadPool]: SQL status: OK in 0.051 seconds
+[0m20:07:33.807726 [debug] [ThreadPool]: On list_dev: Close
+[0m20:07:33.807726 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dev, now create_dev_main)
+[0m20:07:33.808736 [debug] [ThreadPool]: Creating schema "database: "dev"
+schema: "main"
+"
+[0m20:07:33.812736 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m20:07:33.812736 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='dev'
+        and type != 'duckdb'
+    
+  
+[0m20:07:33.813736 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:07:33.814735 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m20:07:33.814735 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m20:07:33.814735 [debug] [ThreadPool]: On create_dev_main: BEGIN
+[0m20:07:33.815737 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:07:33.815737 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m20:07:33.815737 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+    
+        create schema if not exists "dev"."main"
+    
+[0m20:07:33.816736 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:07:33.816736 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m20:07:33.816736 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m20:07:33.816736 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m20:07:33.817736 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:07:33.817736 [debug] [ThreadPool]: On create_dev_main: Close
+[0m20:07:33.818747 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev_main'
+[0m20:07:33.821741 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m20:07:33.821741 [debug] [ThreadPool]: On list_dev_main: BEGIN
+[0m20:07:33.821741 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:07:33.822737 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m20:07:33.822737 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m20:07:33.822737 [debug] [ThreadPool]: On list_dev_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "connection_name": "list_dev_main"} */
+select
+      'dev' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'dev'
+  
+[0m20:07:33.832734 [debug] [ThreadPool]: SQL status: OK in 0.010 seconds
+[0m20:07:33.833736 [debug] [ThreadPool]: On list_dev_main: ROLLBACK
+[0m20:07:33.833736 [debug] [ThreadPool]: On list_dev_main: Close
+[0m20:07:33.834736 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a617d371-70ac-4ae5-8e2c-71b849a9b890', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B1F297C0>]}
+[0m20:07:33.834736 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:07:33.834736 [debug] [MainThread]: On master: BEGIN
+[0m20:07:33.835736 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:07:33.835736 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m20:07:33.835736 [debug] [MainThread]: On master: COMMIT
+[0m20:07:33.835736 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:07:33.835736 [debug] [MainThread]: On master: COMMIT
+[0m20:07:33.836736 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m20:07:33.836736 [debug] [MainThread]: On master: Close
+[0m20:07:33.839785 [debug] [Thread-1 (]: Began running node model.nova_dbt.stg_demografi
+[0m20:07:33.839785 [info ] [Thread-1 (]: 1 of 5 START sql view model main.stg_demografi ................................. [RUN]
+[0m20:07:33.840786 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.nova_dbt.stg_demografi'
+[0m20:07:33.840786 [debug] [Thread-1 (]: Began compiling node model.nova_dbt.stg_demografi
+[0m20:07:33.843785 [debug] [Thread-1 (]: Writing injected SQL for node "model.nova_dbt.stg_demografi"
+[0m20:07:33.844790 [debug] [Thread-1 (]: Began executing node model.nova_dbt.stg_demografi
+[0m20:07:33.844790 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m20:07:33.845799 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_demografi"} */
+select database_name, type from duckdb_databases()
+[0m20:07:33.845799 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:07:33.846787 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m20:07:33.847785 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m20:07:33.847785 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_demografi"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('dev')
+                      and lower(schema_name) = lower('main')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m20:07:33.848785 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m20:07:33.867786 [debug] [Thread-1 (]: Writing runtime sql for node "model.nova_dbt.stg_demografi"
+[0m20:07:33.867786 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m20:07:33.868786 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: BEGIN
+[0m20:07:33.868786 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:07:33.868786 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m20:07:33.868786 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_demografi"} */
+
+  
+  create view "dev"."main"."stg_demografi__dbt_tmp" as (
+    with raw_demografi as (
+    select * from read_csv_auto('../data/ilce_demografi.csv')
+)
+
+select
+    ilce_adi,
+    trim(upper(ilce_adi)) as temiz_ilce,
+    nufus,
+    yas_ortalamasi,
+    gelir_durumu
+from raw_demografi
+  );
+
+[0m20:07:33.885785 [debug] [Thread-1 (]: SQL status: OK in 0.016 seconds
+[0m20:07:33.889813 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m20:07:33.889813 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_demografi"} */
+alter view "dev"."main"."stg_demografi" rename to "stg_demografi__dbt_backup"
+[0m20:07:33.890813 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:07:33.891813 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m20:07:33.891813 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_demografi"} */
+alter view "dev"."main"."stg_demografi__dbt_tmp" rename to "stg_demografi"
+[0m20:07:33.892813 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:07:33.901813 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: COMMIT
+[0m20:07:33.901813 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m20:07:33.901813 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: COMMIT
+[0m20:07:33.905346 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m20:07:33.908347 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_demografi"
+[0m20:07:33.908347 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_demografi"} */
+
+      drop view if exists "dev"."main"."stg_demografi__dbt_backup" cascade
+    
+[0m20:07:33.911354 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m20:07:33.912348 [debug] [Thread-1 (]: On model.nova_dbt.stg_demografi: Close
+[0m20:07:33.915360 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a617d371-70ac-4ae5-8e2c-71b849a9b890', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B8AEA6C0>]}
+[0m20:07:33.916348 [info ] [Thread-1 (]: 1 of 5 OK created sql view model main.stg_demografi ............................ [[32mOK[0m in 0.07s]
+[0m20:07:33.916348 [debug] [Thread-1 (]: Finished running node model.nova_dbt.stg_demografi
+[0m20:07:33.917347 [debug] [Thread-1 (]: Began running node model.nova_dbt.stg_musteri
+[0m20:07:33.917347 [info ] [Thread-1 (]: 2 of 5 START sql view model main.stg_musteri ................................... [RUN]
+[0m20:07:33.917347 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nova_dbt.stg_demografi, now model.nova_dbt.stg_musteri)
+[0m20:07:33.918364 [debug] [Thread-1 (]: Began compiling node model.nova_dbt.stg_musteri
+[0m20:07:33.918364 [debug] [Thread-1 (]: Writing injected SQL for node "model.nova_dbt.stg_musteri"
+[0m20:07:33.919348 [debug] [Thread-1 (]: Began executing node model.nova_dbt.stg_musteri
+[0m20:07:33.921352 [debug] [Thread-1 (]: Writing runtime sql for node "model.nova_dbt.stg_musteri"
+[0m20:07:33.922346 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_musteri"
+[0m20:07:33.922346 [debug] [Thread-1 (]: On model.nova_dbt.stg_musteri: BEGIN
+[0m20:07:33.922346 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:07:33.922346 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:07:33.923364 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_musteri"
+[0m20:07:33.923364 [debug] [Thread-1 (]: On model.nova_dbt.stg_musteri: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_musteri"} */
+
+  
+  create view "dev"."main"."stg_musteri__dbt_tmp" as (
+    with raw_musteri as (
+    select * from read_csv_auto('../data/musteri.csv')
+)
+select 
+    musteri_id,
+    ad_soyad,
+    ilce,
+    trim(upper(ilce)) as temiz_ilce,
+    kayit_tarihi::date as kayit_tarihi
+from raw_musteri
+  );
+
+[0m20:07:33.938879 [debug] [Thread-1 (]: SQL status: OK in 0.015 seconds
+[0m20:07:33.940879 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_musteri"
+[0m20:07:33.940879 [debug] [Thread-1 (]: On model.nova_dbt.stg_musteri: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_musteri"} */
+alter view "dev"."main"."stg_musteri" rename to "stg_musteri__dbt_backup"
+[0m20:07:33.941880 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:07:33.942880 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_musteri"
+[0m20:07:33.942880 [debug] [Thread-1 (]: On model.nova_dbt.stg_musteri: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_musteri"} */
+alter view "dev"."main"."stg_musteri__dbt_tmp" rename to "stg_musteri"
+[0m20:07:33.942880 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:07:33.944880 [debug] [Thread-1 (]: On model.nova_dbt.stg_musteri: COMMIT
+[0m20:07:33.944880 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_musteri"
+[0m20:07:33.944880 [debug] [Thread-1 (]: On model.nova_dbt.stg_musteri: COMMIT
+[0m20:07:33.946660 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m20:07:33.948665 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_musteri"
+[0m20:07:33.948665 [debug] [Thread-1 (]: On model.nova_dbt.stg_musteri: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_musteri"} */
+
+      drop view if exists "dev"."main"."stg_musteri__dbt_backup" cascade
+    
+[0m20:07:33.950664 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m20:07:33.951665 [debug] [Thread-1 (]: On model.nova_dbt.stg_musteri: Close
+[0m20:07:33.951665 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a617d371-70ac-4ae5-8e2c-71b849a9b890', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B8205370>]}
+[0m20:07:33.952665 [info ] [Thread-1 (]: 2 of 5 OK created sql view model main.stg_musteri .............................. [[32mOK[0m in 0.03s]
+[0m20:07:33.952665 [debug] [Thread-1 (]: Finished running node model.nova_dbt.stg_musteri
+[0m20:07:33.952665 [debug] [Thread-1 (]: Began running node model.nova_dbt.stg_satis
+[0m20:07:33.953664 [info ] [Thread-1 (]: 3 of 5 START sql view model main.stg_satis ..................................... [RUN]
+[0m20:07:33.953664 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nova_dbt.stg_musteri, now model.nova_dbt.stg_satis)
+[0m20:07:33.953664 [debug] [Thread-1 (]: Began compiling node model.nova_dbt.stg_satis
+[0m20:07:33.954665 [debug] [Thread-1 (]: Writing injected SQL for node "model.nova_dbt.stg_satis"
+[0m20:07:33.954665 [debug] [Thread-1 (]: Began executing node model.nova_dbt.stg_satis
+[0m20:07:33.957665 [debug] [Thread-1 (]: Writing runtime sql for node "model.nova_dbt.stg_satis"
+[0m20:07:33.957665 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_satis"
+[0m20:07:33.957665 [debug] [Thread-1 (]: On model.nova_dbt.stg_satis: BEGIN
+[0m20:07:33.958665 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:07:33.958665 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:07:33.958665 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_satis"
+[0m20:07:33.959676 [debug] [Thread-1 (]: On model.nova_dbt.stg_satis: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_satis"} */
+
+  
+  create view "dev"."main"."stg_satis__dbt_tmp" as (
+    with raw_satis as (
+    select * from read_csv_auto('../data/perakende_satis.csv')
+)
+select 
+    satis_id,
+    musteri_id,
+    tarih::date as satis_tarihi,
+    toplam_tutar,
+    odeme_yontemi
+from raw_satis
+  );
+
+[0m20:07:33.972668 [debug] [Thread-1 (]: SQL status: OK in 0.013 seconds
+[0m20:07:33.974677 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_satis"
+[0m20:07:33.974677 [debug] [Thread-1 (]: On model.nova_dbt.stg_satis: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_satis"} */
+alter view "dev"."main"."stg_satis" rename to "stg_satis__dbt_backup"
+[0m20:07:33.974677 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:07:33.976670 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_satis"
+[0m20:07:33.976670 [debug] [Thread-1 (]: On model.nova_dbt.stg_satis: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_satis"} */
+alter view "dev"."main"."stg_satis__dbt_tmp" rename to "stg_satis"
+[0m20:07:33.976670 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:07:33.977671 [debug] [Thread-1 (]: On model.nova_dbt.stg_satis: COMMIT
+[0m20:07:33.977671 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_satis"
+[0m20:07:33.978670 [debug] [Thread-1 (]: On model.nova_dbt.stg_satis: COMMIT
+[0m20:07:33.980735 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m20:07:33.981746 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_satis"
+[0m20:07:33.981746 [debug] [Thread-1 (]: On model.nova_dbt.stg_satis: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_satis"} */
+
+      drop view if exists "dev"."main"."stg_satis__dbt_backup" cascade
+    
+[0m20:07:33.983743 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m20:07:33.984745 [debug] [Thread-1 (]: On model.nova_dbt.stg_satis: Close
+[0m20:07:33.984745 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a617d371-70ac-4ae5-8e2c-71b849a9b890', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B6E66A80>]}
+[0m20:07:33.984745 [info ] [Thread-1 (]: 3 of 5 OK created sql view model main.stg_satis ................................ [[32mOK[0m in 0.03s]
+[0m20:07:33.985749 [debug] [Thread-1 (]: Finished running node model.nova_dbt.stg_satis
+[0m20:07:33.985749 [debug] [Thread-1 (]: Began running node model.nova_dbt.stg_sepet
+[0m20:07:33.985749 [info ] [Thread-1 (]: 4 of 5 START sql view model main.stg_sepet ..................................... [RUN]
+[0m20:07:33.986744 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nova_dbt.stg_satis, now model.nova_dbt.stg_sepet)
+[0m20:07:33.986744 [debug] [Thread-1 (]: Began compiling node model.nova_dbt.stg_sepet
+[0m20:07:33.986744 [debug] [Thread-1 (]: Writing injected SQL for node "model.nova_dbt.stg_sepet"
+[0m20:07:33.987754 [debug] [Thread-1 (]: Began executing node model.nova_dbt.stg_sepet
+[0m20:07:33.989765 [debug] [Thread-1 (]: Writing runtime sql for node "model.nova_dbt.stg_sepet"
+[0m20:07:33.989765 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_sepet"
+[0m20:07:33.990748 [debug] [Thread-1 (]: On model.nova_dbt.stg_sepet: BEGIN
+[0m20:07:33.990748 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:07:33.990748 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:07:33.990748 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_sepet"
+[0m20:07:33.991748 [debug] [Thread-1 (]: On model.nova_dbt.stg_sepet: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_sepet"} */
+
+  
+  create view "dev"."main"."stg_sepet__dbt_tmp" as (
+    with raw_sepet as (
+    select * from read_csv_auto('../data/sepet.csv')
+)
+select 
+    sepet_id,
+    satis_id,
+    urun_adi,
+    kategori,
+    adet,
+    birim_fiyat,
+    (adet * birim_fiyat) as satir_tutari
+from raw_sepet
+  );
+
+[0m20:07:34.004286 [debug] [Thread-1 (]: SQL status: OK in 0.012 seconds
+[0m20:07:34.006285 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_sepet"
+[0m20:07:34.006285 [debug] [Thread-1 (]: On model.nova_dbt.stg_sepet: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_sepet"} */
+alter view "dev"."main"."stg_sepet" rename to "stg_sepet__dbt_backup"
+[0m20:07:34.007284 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:07:34.008290 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_sepet"
+[0m20:07:34.008290 [debug] [Thread-1 (]: On model.nova_dbt.stg_sepet: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_sepet"} */
+alter view "dev"."main"."stg_sepet__dbt_tmp" rename to "stg_sepet"
+[0m20:07:34.009284 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:07:34.010285 [debug] [Thread-1 (]: On model.nova_dbt.stg_sepet: COMMIT
+[0m20:07:34.010285 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_sepet"
+[0m20:07:34.010285 [debug] [Thread-1 (]: On model.nova_dbt.stg_sepet: COMMIT
+[0m20:07:34.013398 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m20:07:34.014291 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.stg_sepet"
+[0m20:07:34.014291 [debug] [Thread-1 (]: On model.nova_dbt.stg_sepet: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.stg_sepet"} */
+
+      drop view if exists "dev"."main"."stg_sepet__dbt_backup" cascade
+    
+[0m20:07:34.016298 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m20:07:34.017297 [debug] [Thread-1 (]: On model.nova_dbt.stg_sepet: Close
+[0m20:07:34.017297 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a617d371-70ac-4ae5-8e2c-71b849a9b890', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B8C10650>]}
+[0m20:07:34.017297 [info ] [Thread-1 (]: 4 of 5 OK created sql view model main.stg_sepet ................................ [[32mOK[0m in 0.03s]
+[0m20:07:34.018304 [debug] [Thread-1 (]: Finished running node model.nova_dbt.stg_sepet
+[0m20:07:34.018304 [debug] [Thread-1 (]: Began running node model.nova_dbt.fct_satis_analizi
+[0m20:07:34.019298 [info ] [Thread-1 (]: 5 of 5 START sql table model main.fct_satis_analizi ............................ [RUN]
+[0m20:07:34.019298 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nova_dbt.stg_sepet, now model.nova_dbt.fct_satis_analizi)
+[0m20:07:34.020298 [debug] [Thread-1 (]: Began compiling node model.nova_dbt.fct_satis_analizi
+[0m20:07:34.021297 [debug] [Thread-1 (]: Writing injected SQL for node "model.nova_dbt.fct_satis_analizi"
+[0m20:07:34.022298 [debug] [Thread-1 (]: Began executing node model.nova_dbt.fct_satis_analizi
+[0m20:07:34.052297 [debug] [Thread-1 (]: Writing runtime sql for node "model.nova_dbt.fct_satis_analizi"
+[0m20:07:34.062297 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.fct_satis_analizi"
+[0m20:07:34.062297 [debug] [Thread-1 (]: On model.nova_dbt.fct_satis_analizi: BEGIN
+[0m20:07:34.063299 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:07:34.063299 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m20:07:34.063299 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.fct_satis_analizi"
+[0m20:07:34.064296 [debug] [Thread-1 (]: On model.nova_dbt.fct_satis_analizi: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.fct_satis_analizi"} */
+
+    
+
+    create  table
+      "dev"."main"."fct_satis_analizi__dbt_tmp"
+  
+    
+    as (
+      with satis as (
+    select * from "dev"."main"."stg_satis"
+),
+musteri as (
+    select * from "dev"."main"."stg_musteri"
+),
+demografi as (
+    select * from "dev"."main"."stg_demografi"
+),
+sepet as (
+    select * from "dev"."main"."stg_sepet"
+)
+
+select
+    sa.satis_id,
+    sa.satis_tarihi,
+    sa.odeme_yontemi,
+    m.musteri_id,
+    m.ad_soyad,
+    m.temiz_ilce as ilce,
+    d.nufus,
+    d.yas_ortalamasi,
+    d.gelir_durumu,
+    se.sepet_id,
+    se.urun_adi,
+    se.kategori,
+    se.adet,
+    se.birim_fiyat,
+    se.satir_tutari
+from satis sa
+left join musteri m on sa.musteri_id = m.musteri_id
+left join demografi d on m.temiz_ilce = d.temiz_ilce
+left join sepet se on sa.satis_id = se.satis_id
+    );
+    
+  
+[0m20:07:34.077296 [debug] [Thread-1 (]: SQL status: OK in 0.013 seconds
+[0m20:07:34.079299 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.fct_satis_analizi"
+[0m20:07:34.079299 [debug] [Thread-1 (]: On model.nova_dbt.fct_satis_analizi: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.fct_satis_analizi"} */
+alter table "dev"."main"."fct_satis_analizi__dbt_tmp" rename to "fct_satis_analizi"
+[0m20:07:34.080298 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:07:34.085298 [debug] [Thread-1 (]: On model.nova_dbt.fct_satis_analizi: COMMIT
+[0m20:07:34.085298 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.fct_satis_analizi"
+[0m20:07:34.085298 [debug] [Thread-1 (]: On model.nova_dbt.fct_satis_analizi: COMMIT
+[0m20:07:34.089317 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m20:07:34.090304 [debug] [Thread-1 (]: Using duckdb connection "model.nova_dbt.fct_satis_analizi"
+[0m20:07:34.091304 [debug] [Thread-1 (]: On model.nova_dbt.fct_satis_analizi: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "model.nova_dbt.fct_satis_analizi"} */
+
+      drop table if exists "dev"."main"."fct_satis_analizi__dbt_backup" cascade
+    
+[0m20:07:34.091304 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:07:34.092304 [debug] [Thread-1 (]: On model.nova_dbt.fct_satis_analizi: Close
+[0m20:07:34.092304 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a617d371-70ac-4ae5-8e2c-71b849a9b890', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B8B377A0>]}
+[0m20:07:34.093305 [info ] [Thread-1 (]: 5 of 5 OK created sql table model main.fct_satis_analizi ....................... [[32mOK[0m in 0.07s]
+[0m20:07:34.093305 [debug] [Thread-1 (]: Finished running node model.nova_dbt.fct_satis_analizi
+[0m20:07:34.094305 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:07:34.095318 [debug] [MainThread]: On master: BEGIN
+[0m20:07:34.095318 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:07:34.096310 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m20:07:34.096310 [debug] [MainThread]: On master: COMMIT
+[0m20:07:34.096310 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:07:34.096310 [debug] [MainThread]: On master: COMMIT
+[0m20:07:34.097304 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m20:07:34.097304 [debug] [MainThread]: On master: Close
+[0m20:07:34.097304 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:07:34.097304 [debug] [MainThread]: Connection 'create_dev_main' was properly closed.
+[0m20:07:34.098304 [debug] [MainThread]: Connection 'list_dev_main' was properly closed.
+[0m20:07:34.098304 [debug] [MainThread]: Connection 'model.nova_dbt.fct_satis_analizi' was properly closed.
+[0m20:07:34.098304 [info ] [MainThread]: 
+[0m20:07:34.098304 [info ] [MainThread]: Finished running 1 table model, 4 view models in 0 hours 0 minutes and 2.59 seconds (2.59s).
+[0m20:07:34.099304 [debug] [MainThread]: Command end result
+[0m20:07:34.127814 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\manifest.json
+[0m20:07:34.129820 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\semantic_manifest.json
+[0m20:07:34.131815 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\osi_document.json
+[0m20:07:34.136812 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\run_results.json
+[0m20:07:34.136812 [info ] [MainThread]: 
+[0m20:07:34.136812 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:07:34.137813 [info ] [MainThread]: 
+[0m20:07:34.137813 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=5
+[0m20:07:34.138811 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m20:07:34.138811 [debug] [MainThread]: Command `dbt run` succeeded at 20:07:34.138811 after 6.10 seconds
+[0m20:07:34.139815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B6E3CE60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B49C93A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B8B4E360>]}
+[0m20:07:34.139815 [debug] [MainThread]: Flushing usage events
+[0m20:07:35.222339 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:08:00.461916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138391B1700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138397EAAE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013839C9DE80>]}
+
+
+============================== 20:08:00.466129 | db5bca33-582a-4458-a381-7f354bb44919 ==============================
+[0m20:08:00.466129 [info ] [MainThread]: Running with dbt=1.12.6
+[0m20:08:00.466129 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Sami\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt test', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Sami\\OneDrive - 29mayis\\Masaüstü\\YBS305_Proje\\nova_dbt\\logs'}
+[0m20:08:00.643932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'db5bca33-582a-4458-a381-7f354bb44919', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001383B1ED190>]}
+[0m20:08:00.693272 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'db5bca33-582a-4458-a381-7f354bb44919', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001383D8262A0>]}
+[0m20:08:00.695354 [info ] [MainThread]: Registered adapter: duckdb=1.11.1
+[0m20:08:00.876121 [debug] [MainThread]: checksum: 37f25eb6c7ad46764fc7d46787878aeabc0d74ef09c88617427b1c38b007b68e, vars: {}, profile: nova_dbt, target: dev, version: 1.12.6
+[0m20:08:00.978426 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:08:00.979431 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m20:08:00.979431 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:08:00.985431 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'db5bca33-582a-4458-a381-7f354bb44919', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013839207560>]}
+[0m20:08:01.090727 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\manifest.json
+[0m20:08:01.092729 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\semantic_manifest.json
+[0m20:08:01.108472 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\osi_document.json
+[0m20:08:01.142150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'db5bca33-582a-4458-a381-7f354bb44919', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001383D3A1970>]}
+[0m20:08:01.142150 [info ] [MainThread]: Found 5 models, 5 data tests, 511 macros
+[0m20:08:01.143473 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'db5bca33-582a-4458-a381-7f354bb44919', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001383B8FA360>]}
+[0m20:08:01.144504 [info ] [MainThread]: 
+[0m20:08:01.144504 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:08:01.144504 [info ] [MainThread]: 
+[0m20:08:01.145756 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m20:08:01.149267 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev_main'
+[0m20:08:01.198083 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m20:08:01.198083 [debug] [ThreadPool]: On list_dev_main: BEGIN
+[0m20:08:01.198083 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:08:01.234141 [debug] [ThreadPool]: SQL status: OK in 0.035 seconds
+[0m20:08:01.234141 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m20:08:01.234141 [debug] [ThreadPool]: On list_dev_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "connection_name": "list_dev_main"} */
+select
+      'dev' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'dev'
+  
+[0m20:08:01.247233 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m20:08:01.248260 [debug] [ThreadPool]: On list_dev_main: ROLLBACK
+[0m20:08:01.248260 [debug] [ThreadPool]: On list_dev_main: Close
+[0m20:08:01.249266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'db5bca33-582a-4458-a381-7f354bb44919', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001383D8276B0>]}
+[0m20:08:01.250265 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:08:01.250265 [debug] [MainThread]: On master: BEGIN
+[0m20:08:01.250265 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:08:01.250265 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m20:08:01.251266 [debug] [MainThread]: On master: COMMIT
+[0m20:08:01.251266 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:08:01.251266 [debug] [MainThread]: On master: COMMIT
+[0m20:08:01.251266 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m20:08:01.251266 [debug] [MainThread]: On master: Close
+[0m20:08:01.253770 [debug] [Thread-1 (]: Began running node test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961
+[0m20:08:01.253770 [info ] [Thread-1 (]: 1 of 5 START test accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek  [RUN]
+[0m20:08:01.254776 [debug] [Thread-1 (]: Acquiring new duckdb connection 'test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961'
+[0m20:08:01.254776 [debug] [Thread-1 (]: Began compiling node test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961
+[0m20:08:01.272775 [debug] [Thread-1 (]: Writing injected SQL for node "test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961"
+[0m20:08:01.273776 [debug] [Thread-1 (]: Began executing node test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961
+[0m20:08:01.274776 [debug] [Thread-1 (]: Using duckdb connection "test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961"
+[0m20:08:01.274776 [debug] [Thread-1 (]: On test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961"} */
+select database_name, type from duckdb_databases()
+[0m20:08:01.274776 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:08:01.275776 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m20:08:01.276865 [debug] [Thread-1 (]: Using duckdb connection "test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961"
+[0m20:08:01.276865 [debug] [Thread-1 (]: On test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961"} */
+
+                    select table_name, constraint_type from duckdb_constraints()
+                    where lower(database_name) = lower('dev')
+                      and lower(schema_name) = lower('main_dbt_test__audit')
+                      and constraint_type in ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
+                    
+[0m20:08:01.277864 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m20:08:01.288859 [debug] [Thread-1 (]: Writing runtime sql for node "test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961"
+[0m20:08:01.289855 [debug] [Thread-1 (]: Using duckdb connection "test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961"
+[0m20:08:01.290776 [debug] [Thread-1 (]: On test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961: BEGIN
+[0m20:08:01.290776 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:08:01.290776 [debug] [Thread-1 (]: Using duckdb connection "test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961"
+[0m20:08:01.291775 [debug] [Thread-1 (]: On test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        gelir_durumu as value_field,
+        count(*) as n_records
+
+    from "dev"."main"."fct_satis_analizi"
+    group by gelir_durumu
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'Dusuk','Orta','Yuksek'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:08:01.293775 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m20:08:01.296786 [debug] [Thread-1 (]: On test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961: ROLLBACK
+[0m20:08:01.296786 [debug] [Thread-1 (]: On test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961: Close
+[0m20:08:01.296786 [info ] [Thread-1 (]: 1 of 5 PASS accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek  [[32mPASS[0m in 0.04s]
+[0m20:08:01.297782 [debug] [Thread-1 (]: Finished running node test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961
+[0m20:08:01.297782 [debug] [Thread-1 (]: Began running node test.nova_dbt.not_null_fct_satis_analizi_sepet_id.9606fd4058
+[0m20:08:01.298775 [info ] [Thread-1 (]: 2 of 5 START test not_null_fct_satis_analizi_sepet_id .......................... [RUN]
+[0m20:08:01.298775 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961, now test.nova_dbt.not_null_fct_satis_analizi_sepet_id.9606fd4058)
+[0m20:08:01.298775 [debug] [Thread-1 (]: Began compiling node test.nova_dbt.not_null_fct_satis_analizi_sepet_id.9606fd4058
+[0m20:08:01.304776 [debug] [Thread-1 (]: Writing injected SQL for node "test.nova_dbt.not_null_fct_satis_analizi_sepet_id.9606fd4058"
+[0m20:08:01.305776 [debug] [Thread-1 (]: Began executing node test.nova_dbt.not_null_fct_satis_analizi_sepet_id.9606fd4058
+[0m20:08:01.306777 [debug] [Thread-1 (]: Writing runtime sql for node "test.nova_dbt.not_null_fct_satis_analizi_sepet_id.9606fd4058"
+[0m20:08:01.307778 [debug] [Thread-1 (]: Using duckdb connection "test.nova_dbt.not_null_fct_satis_analizi_sepet_id.9606fd4058"
+[0m20:08:01.307778 [debug] [Thread-1 (]: On test.nova_dbt.not_null_fct_satis_analizi_sepet_id.9606fd4058: BEGIN
+[0m20:08:01.307778 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:08:01.308776 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m20:08:01.308776 [debug] [Thread-1 (]: Using duckdb connection "test.nova_dbt.not_null_fct_satis_analizi_sepet_id.9606fd4058"
+[0m20:08:01.308776 [debug] [Thread-1 (]: On test.nova_dbt.not_null_fct_satis_analizi_sepet_id.9606fd4058: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "test.nova_dbt.not_null_fct_satis_analizi_sepet_id.9606fd4058"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select sepet_id
+from "dev"."main"."fct_satis_analizi"
+where sepet_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:08:01.309775 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m20:08:01.310775 [debug] [Thread-1 (]: On test.nova_dbt.not_null_fct_satis_analizi_sepet_id.9606fd4058: ROLLBACK
+[0m20:08:01.311776 [debug] [Thread-1 (]: On test.nova_dbt.not_null_fct_satis_analizi_sepet_id.9606fd4058: Close
+[0m20:08:01.311776 [info ] [Thread-1 (]: 2 of 5 PASS not_null_fct_satis_analizi_sepet_id ................................ [[32mPASS[0m in 0.01s]
+[0m20:08:01.312775 [debug] [Thread-1 (]: Finished running node test.nova_dbt.not_null_fct_satis_analizi_sepet_id.9606fd4058
+[0m20:08:01.312775 [debug] [Thread-1 (]: Began running node test.nova_dbt.not_null_stg_musteri_musteri_id.682165ac6f
+[0m20:08:01.312775 [info ] [Thread-1 (]: 3 of 5 START test not_null_stg_musteri_musteri_id .............................. [RUN]
+[0m20:08:01.313775 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.nova_dbt.not_null_fct_satis_analizi_sepet_id.9606fd4058, now test.nova_dbt.not_null_stg_musteri_musteri_id.682165ac6f)
+[0m20:08:01.313775 [debug] [Thread-1 (]: Began compiling node test.nova_dbt.not_null_stg_musteri_musteri_id.682165ac6f
+[0m20:08:01.317780 [debug] [Thread-1 (]: Writing injected SQL for node "test.nova_dbt.not_null_stg_musteri_musteri_id.682165ac6f"
+[0m20:08:01.319718 [debug] [Thread-1 (]: Began executing node test.nova_dbt.not_null_stg_musteri_musteri_id.682165ac6f
+[0m20:08:01.320731 [debug] [Thread-1 (]: Writing runtime sql for node "test.nova_dbt.not_null_stg_musteri_musteri_id.682165ac6f"
+[0m20:08:01.321792 [debug] [Thread-1 (]: Using duckdb connection "test.nova_dbt.not_null_stg_musteri_musteri_id.682165ac6f"
+[0m20:08:01.322841 [debug] [Thread-1 (]: On test.nova_dbt.not_null_stg_musteri_musteri_id.682165ac6f: BEGIN
+[0m20:08:01.322841 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:08:01.322841 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m20:08:01.323842 [debug] [Thread-1 (]: Using duckdb connection "test.nova_dbt.not_null_stg_musteri_musteri_id.682165ac6f"
+[0m20:08:01.323842 [debug] [Thread-1 (]: On test.nova_dbt.not_null_stg_musteri_musteri_id.682165ac6f: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "test.nova_dbt.not_null_stg_musteri_musteri_id.682165ac6f"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select musteri_id
+from "dev"."main"."stg_musteri"
+where musteri_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:08:01.328921 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m20:08:01.329866 [debug] [Thread-1 (]: On test.nova_dbt.not_null_stg_musteri_musteri_id.682165ac6f: ROLLBACK
+[0m20:08:01.330929 [debug] [Thread-1 (]: On test.nova_dbt.not_null_stg_musteri_musteri_id.682165ac6f: Close
+[0m20:08:01.330929 [info ] [Thread-1 (]: 3 of 5 PASS not_null_stg_musteri_musteri_id .................................... [[32mPASS[0m in 0.02s]
+[0m20:08:01.331896 [debug] [Thread-1 (]: Finished running node test.nova_dbt.not_null_stg_musteri_musteri_id.682165ac6f
+[0m20:08:01.331896 [debug] [Thread-1 (]: Began running node test.nova_dbt.unique_fct_satis_analizi_sepet_id.f70b79bffc
+[0m20:08:01.331896 [info ] [Thread-1 (]: 4 of 5 START test unique_fct_satis_analizi_sepet_id ............................ [RUN]
+[0m20:08:01.332841 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.nova_dbt.not_null_stg_musteri_musteri_id.682165ac6f, now test.nova_dbt.unique_fct_satis_analizi_sepet_id.f70b79bffc)
+[0m20:08:01.332841 [debug] [Thread-1 (]: Began compiling node test.nova_dbt.unique_fct_satis_analizi_sepet_id.f70b79bffc
+[0m20:08:01.337847 [debug] [Thread-1 (]: Writing injected SQL for node "test.nova_dbt.unique_fct_satis_analizi_sepet_id.f70b79bffc"
+[0m20:08:01.338853 [debug] [Thread-1 (]: Began executing node test.nova_dbt.unique_fct_satis_analizi_sepet_id.f70b79bffc
+[0m20:08:01.339855 [debug] [Thread-1 (]: Writing runtime sql for node "test.nova_dbt.unique_fct_satis_analizi_sepet_id.f70b79bffc"
+[0m20:08:01.340853 [debug] [Thread-1 (]: Using duckdb connection "test.nova_dbt.unique_fct_satis_analizi_sepet_id.f70b79bffc"
+[0m20:08:01.340853 [debug] [Thread-1 (]: On test.nova_dbt.unique_fct_satis_analizi_sepet_id.f70b79bffc: BEGIN
+[0m20:08:01.340853 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:08:01.341854 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m20:08:01.341854 [debug] [Thread-1 (]: Using duckdb connection "test.nova_dbt.unique_fct_satis_analizi_sepet_id.f70b79bffc"
+[0m20:08:01.341854 [debug] [Thread-1 (]: On test.nova_dbt.unique_fct_satis_analizi_sepet_id.f70b79bffc: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "test.nova_dbt.unique_fct_satis_analizi_sepet_id.f70b79bffc"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    sepet_id as unique_field,
+    count(*) as n_records
+
+from "dev"."main"."fct_satis_analizi"
+where sepet_id is not null
+group by sepet_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:08:01.343853 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m20:08:01.344854 [debug] [Thread-1 (]: On test.nova_dbt.unique_fct_satis_analizi_sepet_id.f70b79bffc: ROLLBACK
+[0m20:08:01.345852 [debug] [Thread-1 (]: On test.nova_dbt.unique_fct_satis_analizi_sepet_id.f70b79bffc: Close
+[0m20:08:01.345852 [info ] [Thread-1 (]: 4 of 5 PASS unique_fct_satis_analizi_sepet_id .................................. [[32mPASS[0m in 0.01s]
+[0m20:08:01.345852 [debug] [Thread-1 (]: Finished running node test.nova_dbt.unique_fct_satis_analizi_sepet_id.f70b79bffc
+[0m20:08:01.346854 [debug] [Thread-1 (]: Began running node test.nova_dbt.unique_stg_musteri_musteri_id.21e11ed4c5
+[0m20:08:01.346854 [info ] [Thread-1 (]: 5 of 5 START test unique_stg_musteri_musteri_id ................................ [RUN]
+[0m20:08:01.346854 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.nova_dbt.unique_fct_satis_analizi_sepet_id.f70b79bffc, now test.nova_dbt.unique_stg_musteri_musteri_id.21e11ed4c5)
+[0m20:08:01.347855 [debug] [Thread-1 (]: Began compiling node test.nova_dbt.unique_stg_musteri_musteri_id.21e11ed4c5
+[0m20:08:01.351861 [debug] [Thread-1 (]: Writing injected SQL for node "test.nova_dbt.unique_stg_musteri_musteri_id.21e11ed4c5"
+[0m20:08:01.351861 [debug] [Thread-1 (]: Began executing node test.nova_dbt.unique_stg_musteri_musteri_id.21e11ed4c5
+[0m20:08:01.353366 [debug] [Thread-1 (]: Writing runtime sql for node "test.nova_dbt.unique_stg_musteri_musteri_id.21e11ed4c5"
+[0m20:08:01.354374 [debug] [Thread-1 (]: Using duckdb connection "test.nova_dbt.unique_stg_musteri_musteri_id.21e11ed4c5"
+[0m20:08:01.354374 [debug] [Thread-1 (]: On test.nova_dbt.unique_stg_musteri_musteri_id.21e11ed4c5: BEGIN
+[0m20:08:01.354374 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:08:01.355370 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m20:08:01.355370 [debug] [Thread-1 (]: Using duckdb connection "test.nova_dbt.unique_stg_musteri_musteri_id.21e11ed4c5"
+[0m20:08:01.355370 [debug] [Thread-1 (]: On test.nova_dbt.unique_stg_musteri_musteri_id.21e11ed4c5: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "node_id": "test.nova_dbt.unique_stg_musteri_musteri_id.21e11ed4c5"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    musteri_id as unique_field,
+    count(*) as n_records
+
+from "dev"."main"."stg_musteri"
+where musteri_id is not null
+group by musteri_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:08:01.359370 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m20:08:01.360372 [debug] [Thread-1 (]: On test.nova_dbt.unique_stg_musteri_musteri_id.21e11ed4c5: ROLLBACK
+[0m20:08:01.360372 [debug] [Thread-1 (]: On test.nova_dbt.unique_stg_musteri_musteri_id.21e11ed4c5: Close
+[0m20:08:01.361371 [info ] [Thread-1 (]: 5 of 5 PASS unique_stg_musteri_musteri_id ...................................... [[32mPASS[0m in 0.01s]
+[0m20:08:01.361371 [debug] [Thread-1 (]: Finished running node test.nova_dbt.unique_stg_musteri_musteri_id.21e11ed4c5
+[0m20:08:01.362370 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:08:01.363392 [debug] [MainThread]: On master: BEGIN
+[0m20:08:01.363392 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:08:01.363392 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m20:08:01.363392 [debug] [MainThread]: On master: COMMIT
+[0m20:08:01.364372 [debug] [MainThread]: Using duckdb connection "master"
+[0m20:08:01.364372 [debug] [MainThread]: On master: COMMIT
+[0m20:08:01.364372 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m20:08:01.364372 [debug] [MainThread]: On master: Close
+[0m20:08:01.364372 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:08:01.365372 [debug] [MainThread]: Connection 'list_dev_main' was properly closed.
+[0m20:08:01.365372 [debug] [MainThread]: Connection 'test.nova_dbt.unique_stg_musteri_musteri_id.21e11ed4c5' was properly closed.
+[0m20:08:01.365372 [info ] [MainThread]: 
+[0m20:08:01.365372 [info ] [MainThread]: Finished running 5 data tests in 0 hours 0 minutes and 0.22 seconds (0.22s).
+[0m20:08:01.366878 [debug] [MainThread]: Command end result
+[0m20:08:01.387888 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\manifest.json
+[0m20:08:01.389895 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\semantic_manifest.json
+[0m20:08:01.390888 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\osi_document.json
+[0m20:08:01.396900 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\run_results.json
+[0m20:08:01.396900 [info ] [MainThread]: 
+[0m20:08:01.396900 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:08:01.397893 [info ] [MainThread]: 
+[0m20:08:01.397893 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=5
+[0m20:08:01.398981 [debug] [MainThread]: Command `dbt test` succeeded at 20:08:01.397893 after 1.03 seconds
+[0m20:08:01.398981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001383B8CE5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001383DBC6330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001383D81DA90>]}
+[0m20:08:01.398981 [debug] [MainThread]: Flushing usage events
+[0m20:08:02.108701 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:09:38.295573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023885553320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238854526F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023885D8B500>]}
+
+
+============================== 20:09:38.302576 | 348fcd49-25d9-454f-a42f-0efaa353a255 ==============================
+[0m20:09:38.302576 [info ] [MainThread]: Running with dbt=1.12.6
+[0m20:09:38.304646 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Sami\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt docs generate', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Sami\\OneDrive - 29mayis\\Masaüstü\\YBS305_Proje\\nova_dbt\\logs'}
+[0m20:09:38.492088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '348fcd49-25d9-454f-a42f-0efaa353a255', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023888879D60>]}
+[0m20:09:38.535089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '348fcd49-25d9-454f-a42f-0efaa353a255', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023888FD8950>]}
+[0m20:09:38.537089 [info ] [MainThread]: Registered adapter: duckdb=1.11.1
+[0m20:09:38.720079 [debug] [MainThread]: checksum: 37f25eb6c7ad46764fc7d46787878aeabc0d74ef09c88617427b1c38b007b68e, vars: {}, profile: nova_dbt, target: dev, version: 1.12.6
+[0m20:09:38.811589 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:09:38.812591 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m20:09:38.812591 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:09:38.819590 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '348fcd49-25d9-454f-a42f-0efaa353a255', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002388AE2F080>]}
+[0m20:09:38.898115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '348fcd49-25d9-454f-a42f-0efaa353a255', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002388AD2A360>]}
+[0m20:09:38.898115 [info ] [MainThread]: Found 5 models, 5 data tests, 511 macros
+[0m20:09:38.899115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '348fcd49-25d9-454f-a42f-0efaa353a255', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023885D8BE60>]}
+[0m20:09:38.901112 [info ] [MainThread]: 
+[0m20:09:38.901112 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:09:38.901112 [info ] [MainThread]: 
+[0m20:09:38.902113 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m20:09:38.905115 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev_main'
+[0m20:09:38.995626 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m20:09:38.995626 [debug] [ThreadPool]: On list_dev_main: BEGIN
+[0m20:09:38.995626 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:09:39.022625 [debug] [ThreadPool]: SQL status: OK in 0.026 seconds
+[0m20:09:39.022625 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m20:09:39.022625 [debug] [ThreadPool]: On list_dev_main: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "connection_name": "list_dev_main"} */
+select
+      'dev' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'dev'
+  
+[0m20:09:39.035626 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m20:09:39.036626 [debug] [ThreadPool]: On list_dev_main: ROLLBACK
+[0m20:09:39.037638 [debug] [ThreadPool]: On list_dev_main: Close
+[0m20:09:39.038627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '348fcd49-25d9-454f-a42f-0efaa353a255', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002388C2EC2C0>]}
+[0m20:09:39.040627 [debug] [Thread-1 (]: Began running node model.nova_dbt.stg_demografi
+[0m20:09:39.041627 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.nova_dbt.stg_demografi'
+[0m20:09:39.041627 [debug] [Thread-1 (]: Began compiling node model.nova_dbt.stg_demografi
+[0m20:09:39.044626 [debug] [Thread-1 (]: Writing injected SQL for node "model.nova_dbt.stg_demografi"
+[0m20:09:39.045642 [debug] [Thread-1 (]: Began executing node model.nova_dbt.stg_demografi
+[0m20:09:39.045642 [debug] [Thread-1 (]: Finished running node model.nova_dbt.stg_demografi
+[0m20:09:39.046627 [debug] [Thread-1 (]: Began running node model.nova_dbt.stg_musteri
+[0m20:09:39.046627 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nova_dbt.stg_demografi, now model.nova_dbt.stg_musteri)
+[0m20:09:39.046627 [debug] [Thread-1 (]: Began compiling node model.nova_dbt.stg_musteri
+[0m20:09:39.047627 [debug] [Thread-1 (]: Writing injected SQL for node "model.nova_dbt.stg_musteri"
+[0m20:09:39.047627 [debug] [Thread-1 (]: Began executing node model.nova_dbt.stg_musteri
+[0m20:09:39.048627 [debug] [Thread-1 (]: Finished running node model.nova_dbt.stg_musteri
+[0m20:09:39.048627 [debug] [Thread-1 (]: Began running node model.nova_dbt.stg_satis
+[0m20:09:39.048627 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nova_dbt.stg_musteri, now model.nova_dbt.stg_satis)
+[0m20:09:39.049627 [debug] [Thread-1 (]: Began compiling node model.nova_dbt.stg_satis
+[0m20:09:39.049627 [debug] [Thread-1 (]: Writing injected SQL for node "model.nova_dbt.stg_satis"
+[0m20:09:39.050627 [debug] [Thread-1 (]: Began executing node model.nova_dbt.stg_satis
+[0m20:09:39.050627 [debug] [Thread-1 (]: Finished running node model.nova_dbt.stg_satis
+[0m20:09:39.051627 [debug] [Thread-1 (]: Began running node model.nova_dbt.stg_sepet
+[0m20:09:39.051627 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nova_dbt.stg_satis, now model.nova_dbt.stg_sepet)
+[0m20:09:39.051627 [debug] [Thread-1 (]: Began compiling node model.nova_dbt.stg_sepet
+[0m20:09:39.052627 [debug] [Thread-1 (]: Writing injected SQL for node "model.nova_dbt.stg_sepet"
+[0m20:09:39.052627 [debug] [Thread-1 (]: Began executing node model.nova_dbt.stg_sepet
+[0m20:09:39.053627 [debug] [Thread-1 (]: Finished running node model.nova_dbt.stg_sepet
+[0m20:09:39.053627 [debug] [Thread-1 (]: Began running node test.nova_dbt.not_null_stg_musteri_musteri_id.682165ac6f
+[0m20:09:39.053627 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nova_dbt.stg_sepet, now test.nova_dbt.not_null_stg_musteri_musteri_id.682165ac6f)
+[0m20:09:39.053627 [debug] [Thread-1 (]: Began compiling node test.nova_dbt.not_null_stg_musteri_musteri_id.682165ac6f
+[0m20:09:39.062625 [debug] [Thread-1 (]: Writing injected SQL for node "test.nova_dbt.not_null_stg_musteri_musteri_id.682165ac6f"
+[0m20:09:39.063635 [debug] [Thread-1 (]: Began executing node test.nova_dbt.not_null_stg_musteri_musteri_id.682165ac6f
+[0m20:09:39.064629 [debug] [Thread-1 (]: Finished running node test.nova_dbt.not_null_stg_musteri_musteri_id.682165ac6f
+[0m20:09:39.064629 [debug] [Thread-1 (]: Began running node test.nova_dbt.unique_stg_musteri_musteri_id.21e11ed4c5
+[0m20:09:39.064629 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.nova_dbt.not_null_stg_musteri_musteri_id.682165ac6f, now test.nova_dbt.unique_stg_musteri_musteri_id.21e11ed4c5)
+[0m20:09:39.064629 [debug] [Thread-1 (]: Began compiling node test.nova_dbt.unique_stg_musteri_musteri_id.21e11ed4c5
+[0m20:09:39.069633 [debug] [Thread-1 (]: Writing injected SQL for node "test.nova_dbt.unique_stg_musteri_musteri_id.21e11ed4c5"
+[0m20:09:39.070628 [debug] [Thread-1 (]: Began executing node test.nova_dbt.unique_stg_musteri_musteri_id.21e11ed4c5
+[0m20:09:39.070628 [debug] [Thread-1 (]: Finished running node test.nova_dbt.unique_stg_musteri_musteri_id.21e11ed4c5
+[0m20:09:39.071629 [debug] [Thread-1 (]: Began running node model.nova_dbt.fct_satis_analizi
+[0m20:09:39.071629 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.nova_dbt.unique_stg_musteri_musteri_id.21e11ed4c5, now model.nova_dbt.fct_satis_analizi)
+[0m20:09:39.071629 [debug] [Thread-1 (]: Began compiling node model.nova_dbt.fct_satis_analizi
+[0m20:09:39.073627 [debug] [Thread-1 (]: Writing injected SQL for node "model.nova_dbt.fct_satis_analizi"
+[0m20:09:39.073627 [debug] [Thread-1 (]: Began executing node model.nova_dbt.fct_satis_analizi
+[0m20:09:39.074630 [debug] [Thread-1 (]: Finished running node model.nova_dbt.fct_satis_analizi
+[0m20:09:39.074630 [debug] [Thread-1 (]: Began running node test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961
+[0m20:09:39.075628 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nova_dbt.fct_satis_analizi, now test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961)
+[0m20:09:39.075628 [debug] [Thread-1 (]: Began compiling node test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961
+[0m20:09:39.087141 [debug] [Thread-1 (]: Writing injected SQL for node "test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961"
+[0m20:09:39.088141 [debug] [Thread-1 (]: Began executing node test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961
+[0m20:09:39.088141 [debug] [Thread-1 (]: Finished running node test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961
+[0m20:09:39.089142 [debug] [Thread-1 (]: Began running node test.nova_dbt.not_null_fct_satis_analizi_sepet_id.9606fd4058
+[0m20:09:39.089142 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.nova_dbt.accepted_values_fct_satis_analizi_gelir_durumu__Dusuk__Orta__Yuksek.97e1506961, now test.nova_dbt.not_null_fct_satis_analizi_sepet_id.9606fd4058)
+[0m20:09:39.089142 [debug] [Thread-1 (]: Began compiling node test.nova_dbt.not_null_fct_satis_analizi_sepet_id.9606fd4058
+[0m20:09:39.093140 [debug] [Thread-1 (]: Writing injected SQL for node "test.nova_dbt.not_null_fct_satis_analizi_sepet_id.9606fd4058"
+[0m20:09:39.094141 [debug] [Thread-1 (]: Began executing node test.nova_dbt.not_null_fct_satis_analizi_sepet_id.9606fd4058
+[0m20:09:39.094141 [debug] [Thread-1 (]: Finished running node test.nova_dbt.not_null_fct_satis_analizi_sepet_id.9606fd4058
+[0m20:09:39.094141 [debug] [Thread-1 (]: Began running node test.nova_dbt.unique_fct_satis_analizi_sepet_id.f70b79bffc
+[0m20:09:39.095140 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.nova_dbt.not_null_fct_satis_analizi_sepet_id.9606fd4058, now test.nova_dbt.unique_fct_satis_analizi_sepet_id.f70b79bffc)
+[0m20:09:39.095140 [debug] [Thread-1 (]: Began compiling node test.nova_dbt.unique_fct_satis_analizi_sepet_id.f70b79bffc
+[0m20:09:39.098140 [debug] [Thread-1 (]: Writing injected SQL for node "test.nova_dbt.unique_fct_satis_analizi_sepet_id.f70b79bffc"
+[0m20:09:39.099141 [debug] [Thread-1 (]: Began executing node test.nova_dbt.unique_fct_satis_analizi_sepet_id.f70b79bffc
+[0m20:09:39.099141 [debug] [Thread-1 (]: Finished running node test.nova_dbt.unique_fct_satis_analizi_sepet_id.f70b79bffc
+[0m20:09:39.100139 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:09:39.100139 [debug] [MainThread]: Connection 'list_dev_main' was properly closed.
+[0m20:09:39.100139 [debug] [MainThread]: Connection 'test.nova_dbt.unique_fct_satis_analizi_sepet_id.f70b79bffc' was properly closed.
+[0m20:09:39.101140 [debug] [MainThread]: Command end result
+[0m20:09:39.151148 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\manifest.json
+[0m20:09:39.153142 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\semantic_manifest.json
+[0m20:09:39.169151 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\osi_document.json
+[0m20:09:39.175141 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\run_results.json
+[0m20:09:39.556415 [debug] [MainThread]: Acquiring new duckdb connection 'generate_catalog'
+[0m20:09:39.557415 [info ] [MainThread]: Building catalog
+[0m20:09:39.572513 [debug] [ThreadPool]: Acquiring new duckdb connection 'dev.information_schema'
+[0m20:09:39.593027 [debug] [ThreadPool]: Using duckdb connection "dev.information_schema"
+[0m20:09:39.593027 [debug] [ThreadPool]: On dev.information_schema: /* {"app": "dbt", "dbt_version": "1.12.6", "profile_name": "nova_dbt", "target_name": "dev", "connection_name": "dev.information_schema"} */
+
+    
+    with tables as (
+      select *
+    from (
+        select
+            t.database_name as table_database,
+            t.schema_name as table_schema,
+            t.table_name as table_name,
+            'BASE TABLE' as table_type,
+            t.comment as table_comment
+        from duckdb_tables() t
+        where upper(t.database_name) = upper('dev')
+
+        union all
+
+        select
+            v.database_name as table_database,
+            v.schema_name as table_schema,
+            v.view_name as table_name,
+            'VIEW' as table_type,
+            v.comment as table_comment
+        from duckdb_views() v
+        where upper(v.database_name) = upper('dev')
+    ) catalog_tables
+      
+        where (
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('stg_musteri')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('stg_sepet')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('stg_demografi')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('fct_satis_analizi')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('stg_satis')
+                ))
+    
+    ),
+    columns as (
+      select *
+    from (
+        select
+            c.database_name as table_database,
+            c.schema_name as table_schema,
+            c.table_name as table_name,
+            c.column_name as column_name,
+            c.column_index as column_index,
+            c.data_type as column_type,
+            c.comment as column_comment
+        from duckdb_columns() c
+        where upper(c.database_name) = upper('dev')
+    ) catalog_columns
+      
+        where (
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('stg_musteri')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('stg_sepet')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('stg_demografi')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('fct_satis_analizi')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('stg_satis')
+                ))
+    
+    )
+    select
+        tables.table_database,
+        tables.table_schema,
+        tables.table_name,
+        tables.table_type,
+        tables.table_comment,
+        columns.column_name,
+        columns.column_index,
+        columns.column_type,
+        columns.column_comment,
+        null as table_owner
+    from tables
+    join columns using (table_database, table_schema, table_name)
+    order by table_schema, table_name, column_index
+  
+  
+[0m20:09:39.594026 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:09:39.610023 [debug] [ThreadPool]: SQL status: OK in 0.016 seconds
+[0m20:09:39.612024 [debug] [ThreadPool]: On dev.information_schema: Close
+[0m20:09:39.619075 [debug] [MainThread]: Wrote artifact CatalogArtifact to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\catalog.json
+[0m20:09:39.638023 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\manifest.json
+[0m20:09:39.639056 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\semantic_manifest.json
+[0m20:09:39.641107 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\osi_document.json
+[0m20:09:39.641107 [info ] [MainThread]: Catalog written to C:\Users\Sami\OneDrive - 29mayis\Masaüstü\YBS305_Proje\nova_dbt\target\catalog.json
+[0m20:09:39.642023 [debug] [MainThread]: Command `dbt docs generate` succeeded at 20:09:39.642023 after 1.48 seconds
+[0m20:09:39.643106 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m20:09:39.643106 [debug] [MainThread]: Connection 'dev.information_schema' was properly closed.
+[0m20:09:39.643106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238887C7A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238887EF470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002388C068050>]}
+[0m20:09:39.643106 [debug] [MainThread]: Flushing usage events
+[0m20:09:40.504559 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:10:10.086644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002321DD03500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002321D47E840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002321DC8EA20>]}
+
+
+============================== 20:10:10.093646 | 31d0ff55-bb61-466d-a826-abad08fb47ce ==============================
+[0m20:10:10.093646 [info ] [MainThread]: Running with dbt=1.12.6
+[0m20:10:10.094645 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Sami\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt docs serve', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\Sami\\OneDrive - 29mayis\\Masaüstü\\YBS305_Proje\\nova_dbt\\logs'}
+[0m20:10:10.277890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '31d0ff55-bb61-466d-a826-abad08fb47ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002321A5F0350>]}
+[0m20:10:10.321891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '31d0ff55-bb61-466d-a826-abad08fb47ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002321DC8EA20>]}

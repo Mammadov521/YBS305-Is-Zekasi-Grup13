@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_musteri
+    columns:
+      - name: musteri_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_satis_analizi
+    columns:
+      - name: sepet_id
+        tests:
+          - unique
+          - not_null
+      - name: gelir_durumu
+        tests:
+          - accepted_values:
+              values: ['Dusuk', 'Orta', 'Yuksek']

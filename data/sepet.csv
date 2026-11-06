@@ -1,0 +1,9 @@
+sepet_id,satis_id,urun_adi,kategori,adet,birim_fiyat
+1001,101,Akilli Telefon,Elektronik,1,3450.00
+1002,102,Filtre Kahve Makinesi,Kucuk Ev Aletleri,1,850.50
+1003,103,Fotokopi Kagidi,Kirtasiye,2,60.00
+1004,104,Dizustu Bilgisayar,Elektronik,1,5600.00
+1005,105,Camasir Deterjani,Temizlik,2,170.00
+1006,106,Spor Ayakkabi,Giyim,1,1250.00
+1007,107,Defter Seti,Kirtasiye,1,89.90
+1008,108,Kaban,Giyim,1,2100.00
