@@ -39,3 +39,37 @@ Bu projeyi yerelinizde (local) çalıştırmak için aşağıdaki adımları izl
 
 5. **Dashboard'un Görüntülenmesi:**
    Ana dizinde bulunan `YBS305_Proje_Dashboard.pbix` dosyasını Power BI Desktop ile açarak, etkileşimli filtre ve KPI'ları içeren analitik panoyu inceleyebilirsiniz.
+   # YBS305 İş Zekâsı ve Veri Madenciliği - Grup 13 Projesi (Bölüm 1)
+
+## 👥 Grup 13 Üyeleri
+* **Ad Soyad:** [# YBS305 İş Zekâsı ve Veri Madenciliği - Grup 13 Projesi (Bölüm 1)
+
+## 👥 Grup 13 Üyeleri
+* **Ad Soyad:** Emir Can Akıncı - **Öğrenci No:** [030423012]
+* **Ad Soyad:** Ahmet Nihat Sami Badem - **Öğrenci No:** [030423011]
+* **Ad Soyad:** Ahmet Yasir Ertan ]- **Öğrenci No:** [030423029]
+* **Ad Soyad:** Bakhytgul Jailaubai - **Öğrenci No:** [030422053]
+* **Ad Soyad:** Rahman Mammadov - **Öğrenci No:** [030423056]
+
+---
+## 📖 Veri Sözlüğü (Data Dictionary)
+
+Projemizde kullanılan ana veri setinin sütun yapısı ve açıklamaları aşağıdadır:
+
+| Sütun Adı | Veri Tipi | Açıklama |
+| :--- | :--- | :--- |
+| **satis_id** | String / Integer | Satış işleminin benzersiz kimlik numarası |
+| **satis_tarihi** | Date | Satışın gerçekleştiği tarih |
+| **odeme_yontemi** | String | Ödemenin yapıldığı yöntem (Kredi Kartı, Nakit, Havale vb.) |
+| **musteri_id** | String / Integer | Müşterinin benzersiz kimlik numarası |
+| **ad_soyad** | String | Müşterinin adı ve soyadı |
+| **ilce** | String | Müşterinin bulunduğu ilçe (Dış kaynak/demografi verisiyle zenginleştirilmiştir) |
+| **nufus** | Integer | İlçenin toplam nüfusu (Dış kaynak) |
+| **yas_ortalamasi** | Integer | İlçenin yaş ortalaması (Dış kaynak) |
+| **gelir_durumu** | String | Bölgenin gelir düzeyi (Yüksek, Orta, Düşük) |
+| **sepet_id** | String / Integer | Sepet işlem numarası |
+| **urun_adi** | String | Satın alınan ürünün ismi |
+| **kategori** | String | Ürünün ait olduğu kategori (Elektronik, Giyim vb.) |
+| **adet** | Integer | Satın alınan ürün miktarı |
+| **birim_fiyat** | Float | Ürünün birim fiyatı |
+| **satir_tutari** | Float | Adet ve birim fiyat çarpımı sonucunda oluşan toplam tutar |
