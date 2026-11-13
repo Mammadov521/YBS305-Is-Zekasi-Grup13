@@ -50,7 +50,40 @@ Bu projeyi yerelinizde (local) çalıştırmak için aşağıdaki adımları izl
 * **Ad Soyad:** Ahmet Yasir Ertan ]- **Öğrenci No:** [030423029]
 * **Ad Soyad:** Bakhytgul Jailaubai - **Öğrenci No:** [030422053]
 * **Ad Soyad:** Rahman Mammadov - **Öğrenci No:** [030423056]
+  
+İş Zekası Ödevi Görev Dağılımı
+1. Kişi: Rahman Mammadov: Rol	Sorumluluklar & Görevler : Proje Yöneticisi & Veri Hazırlama Uzmanı	
+• Proje planının (Gantt şeması, zaman çizelgesi) ve kapsamın yönetilmesi
 
+
+• Veri setinin incelenmesi, eksik/hatalı verilerin temizlenmesi (Data Cleansing)
+
+
+• Raporun genel koordinasyonu ve entegrasyonu
+
+2. Kişi: Ahmet Ertan: Veri Modelleme & ETL Mimarı	
+• Veri ambarı mimarisinin ve boyutsal modellemenin (Yıldız/Kar Tanesi şeması) tasarlanması
+
+
+• Veri tabanı tablolarının oluşturulması, ilişkilerin kurulması ve ETL (Extract, Transform, Load) süreçlerinin yürütülmesi
+
+3. Kişi: Emircan: İleri Düzey Analiz & İstatistik Uzmanı	
+• SPSS veya SQL kullanarak ileri düzey istatistiksel analizlerin (t-testi, ANOVA vb.) ve veri madenciliği sorgularının yapılması
+
+
+• Analiz sonuçlarının yorumlanması ve bulguların rapora aktarılması
+
+4. Kişi: Sami Badem: Görselleştirştirme & Raporlama Uzmanı	
+• Power BI, Tableau veya benzeri bir araç üzerinde interaktif dashboard'ların (panoların) tasarlanması
+
+
+• Veri hikayeleştirme ilkelerine uygun olarak grafik ve KPI gösterimlerinin oluşturulması
+
+5. Kişi: Bahtgül Jailaubai: Kalite Kontrol, Dokümantasyon & Sunum Sorumlusu	
+• Hazırlanan raporun yazım dili, akademik format ve biçimlendirme kurallarına göre düzenlenmesi
+
+
+• Son kontrollerin yapılması, kaynakçanın hazırlanması ve final sunum slaytlarının tasarlanması
 ---
 ## 📖 Veri Sözlüğü (Data Dictionary)
 
@@ -75,19 +108,3 @@ Projemizde kullanılan ana veri setinin sütun yapısı ve açıklamaları aşa�
 | **satir_tutari** | Float | Adet ve birim fiyat çarpımı sonucunda oluşan toplam tutar |
 
 
-İş Zekası Ödevi Görev Dağılımı
-Kişi / Rol	Sorumluluklar & Görevler
-1. Kişi: Sami Badem : Proje Yöneticisi & Veri Hazırlama Uzmanı	
-• Proje planının (Gantt şeması, zaman çizelgesi) ve kapsamın yönetilmesi
-
-
-• Veri setinin incelenmesi, eksik/hatalı verilerin temizlenmesi (Data Cleansing)
-
-
-• Raporun genel koordinasyonu ve entegrasyonu
-
-2. Kişi: Bahtgül: Veri Modelleme & ETL Mimarı	
-• Veri ambarı mimarisinin ve boyutsal modellemenin (Yıldız/Kar Tanesi şeması) tasarlanması
-
-
-• Veri tabanı tablolarının oluşturulması, ilişkilerin kurulması ve ETL (Extract, Transform, Load) süreçlerinin yürütülmesi
