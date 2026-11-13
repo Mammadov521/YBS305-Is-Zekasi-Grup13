@@ -73,3 +73,21 @@ Projemizde kullanılan ana veri setinin sütun yapısı ve açıklamaları aşa�
 | **adet** | Integer | Satın alınan ürün miktarı |
 | **birim_fiyat** | Float | Ürünün birim fiyatı |
 | **satir_tutari** | Float | Adet ve birim fiyat çarpımı sonucunda oluşan toplam tutar |
+
+
+İş Zekası Ödevi Görev Dağılımı
+Kişi / Rol	Sorumluluklar & Görevler
+1. Kişi: Sami Badem : Proje Yöneticisi & Veri Hazırlama Uzmanı	
+• Proje planının (Gantt şeması, zaman çizelgesi) ve kapsamın yönetilmesi
+
+
+• Veri setinin incelenmesi, eksik/hatalı verilerin temizlenmesi (Data Cleansing)
+
+
+• Raporun genel koordinasyonu ve entegrasyonu
+
+2. Kişi: Bahtgül: Veri Modelleme & ETL Mimarı	
+• Veri ambarı mimarisinin ve boyutsal modellemenin (Yıldız/Kar Tanesi şeması) tasarlanması
+
+
+• Veri tabanı tablolarının oluşturulması, ilişkilerin kurulması ve ETL (Extract, Transform, Load) süreçlerinin yürütülmesi
