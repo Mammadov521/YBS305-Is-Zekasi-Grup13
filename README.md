@@ -6,7 +6,7 @@ Bu projenin temel amacı, veriyle gerçek bir iş problemini uçtan uca çözen,
 
 ## Veri Kaynakları
 Bu projede kullanılan veriler, yönergelere uygun olarak bir temel veri seti ve zenginleştirici dış kaynaklardan (açık veri portalları) derlenmiştir:
-1. **Temel Omurga Verisi (NovaPerakende):** Projenin temelini oluşturan `perakende_satis.csv`, `musteri.csv` ve `sepet.csv` dosyaları, Kaggle'daki "Supermarket Sales Data" ve "Online Retail" veri setlerinden ilham alınarak İstanbul demografisine uyarlanmış ve sentetik olarak türetilmiştir (Eğitmen onaylı alternatif veri kuralı kapsamında).
+1. **Temel Omurga Verisi (NovaPerakende):** Projenin temelini oluşturan `perakende_satis.csv`, `musteri.csv` ve `sepet.csv` dosyaları, Kaggle'daki "Supermarket Sales Data" ve "Online Retail" veri setlerinden ilham alınarak İstanbul demografisine uyarlanmış ve sentetik olarak türetilmiştir (Eğitmen onaylı alternatif veri kuralı kapsamında)..
 2. **Dış Kaynak Verisi (Demografi):** `ilce_demografi.csv` dosyası oluşturulurken ilçelerin nüfus, yaş ve gelir durumu metrikleri için aşağıdaki spesifik kaynaklar kullanılmıştır:
    * **TÜİK:** 2023 Adrese Dayalı Nüfus Kayıt Sistemi (ADNKS) sonuçları baz alınmıştır. (Veri tabanı doğrudan bağlantısı: [TÜİK MEDAS Nüfus Veritabanı](https://biruni.tuik.gov.tr/medas/?kn=95&locale=tr))
    * **İBB Açık Veri Portalı:** İstanbul ilçelerine ait demografik metrikler, portal üzerinde **"İstanbul ili ilçe bazında nüfus"** ve **"sosyo-ekonomik gelişmişlik"** anahtar kelimeleriyle aratılarak elde edilen açık veri setlerinden derlenmiştir (Bağlantı: [İBB İlçe Nüfus Verileri](https://data.ibb.gov.tr/dataset/)).
