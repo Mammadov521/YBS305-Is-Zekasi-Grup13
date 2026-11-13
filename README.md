@@ -1,6 +1,6 @@
 # YBS305 - İş Zekası ve Veri Madenciliği Vize Projesi 
 
-## Proje Özeti ve Amacı
+## Proje Özeti ve Amacı.
 Bu projenin temel amacı, veriyle gerçek bir iş problemini uçtan uca çözen, çalışan bir analitik ürün kurmaktır. Sadece teorik kavramlar değil, bir veri ekibinin iş süreçleri küçük ölçekte baştan sona simüle edilmiştir. 
 **Çözülen İş Problemi:** İstanbul ilçelerindeki demografik yapı ve gelir durumunun perakende satışlarına olan etkisinin incelenmesi ve lokasyon bazlı satış stratejileri için karar destek mekanizması sunulmasıdır.
 
