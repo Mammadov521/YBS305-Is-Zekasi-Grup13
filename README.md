@@ -46,10 +46,10 @@ Bu projeyi yerelinizde (local) çalıştırmak için aşağıdaki adımları izl
 
 ## 👥 Grup 13 Üyeleri
 * **Ad Soyad:** Emir Can Akıncı - **Öğrenci No:** [030423012] = emircanakinci885@gmail.com
-* **Ad Soyad:** Ahmet Nihat Sami Badem - **Öğrenci No:** [030423011] = hmtbdm@gmail.com
-* **Ad Soyad:** Ahmet Yasir Ertan ]- **Öğrenci No:** [030423029] = ertanahmetyasir@gmail.com
-* **Ad Soyad:** Bakhytgul Jailaubai - **Öğrenci No:** [030422053] = jbaqytgul@gmail.com
-* **Ad Soyad:** Rahman Mammadov - **Öğrenci No:** [030423056] = blacksungur13@gmail.com
+* **Ad Soyad:** Ahmet Nihat Sami Badem - **Öğrenci No:** [030423011] = hmtbdm@gmail.com = https://github.com/samibadem/YBS305-Is-Zekasi-Projesi-Grup13
+* **Ad Soyad:** Ahmet Yasir Ertan ]- **Öğrenci No:** [030423029] = ertanahmetyasir@gmail.com = 
+* **Ad Soyad:** Bakhytgul Jailaubai - **Öğrenci No:** [030422053] = jbaqytgul@gmail.com = https://github.com/Bakhytgulll/YBS305-Is-Zekasi-Projesi-Grup13
+* **Ad Soyad:** Rahman Mammadov - **Öğrenci No:** [030423056] = blacksungur13@gmail.com = https://github.com/Mammadov521/YBS305-Is-Zekasi-Projesi-Grup13/settings/access
   
 İş Zekası Ödevi Görev Dağılımı
 1. Kişi: Rahman Mammadov: Rol	Sorumluluklar & Görevler : Proje Yöneticisi & Veri Hazırlama Uzmanı	
